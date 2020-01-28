@@ -15,38 +15,46 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
-				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .footer-navigation -->
-			<?php endif; ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer container-fluid">
+		<div class="row light">
+
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-3 text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo2.png"></div>
+					<div class="col-6 text-center riservata">Area Riservata Clienti</div>
+					<div class="col-3 login">Login <i class="fas fa-sign-in-alt"></i></div>
+
+				</div>
+
+			</div>
+
+
+			</div>
+
+
+			<div class="row scurobottom">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-9">
+						<p><b>Moda Research s.r.l. Società unipersonale</b></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+					<div class="col-3 social">
+						<i class="fab fa-linkedin"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

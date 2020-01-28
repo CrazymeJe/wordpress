@@ -314,11 +314,12 @@ footer .scurobottom{
 .menu-laterale{
     border-right: 4px solid #d5c5a0;
     padding-right: 0px;
+    
 }
 
 
 
-.menu-laterale a{
+.menu-laterale li a{
     width: 100%;
     display: block;
     text-align: right;
@@ -327,13 +328,14 @@ footer .scurobottom{
     border: 0px; 
     border-bottom: 2px solid #d5c5a0;
     border-radius: 0px;
+    box-shadow: none;
 }
 
-.menu-laterale a:last-child{
+.menu-laterale li:last-child{
     border-bottom: 0px solid #d5c5a0;
 }
 
-.menu-laterale a:hover{
+.menu-laterale li:hover a{
     background: #d5c5a0;
     color: #45a61c;
 }
@@ -375,4 +377,30 @@ section{
     color: #fff;
     font-size: 14px;
     width: 40%;
+}
+
+.card{
+    background-color: #2B24EC;
+    color: #F1BCFB;
+    text-align: center;
+}
+
+.title-ann{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.menusecondario{
+    border: 2px solid #543e27;
+    border-radius: 50px;
+    text-align: center;
+    word-spacing: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.menusecondario a{
+    color: #543e27;
 }
